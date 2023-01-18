@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  queue:
+    name: satish_queue
+  exchange:
+    name: satish_topic_exchange
+  routing:
+    key: satish_binding_key
+  json:
+    queue: json_queue
+    routing:
+      key: json_binding_key
+
